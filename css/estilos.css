@@ -7,7 +7,7 @@ html{
 }
 
 .headerProductos{
-    background-color: rgba(177, 122, 131, 0.5);
+    background-color: rgba(255, 199, 209, 0.527);
     display: grid;
     grid-template-columns: 1fr 7fr;
     grid-area: "header";
@@ -24,56 +24,15 @@ html{
     height: 15px;
 }
 
-.productos{
-    display: grid;
-    grid-template-rows: 0.5fr 0.3fr 0,3fr 0,8fr;
-    grid-template-areas: 
-    "header"
-    "menu"
-    "imagenes"
-    "pie";
-}
+
 .titulo{
     font-family: "fuentelocal";
     display: grid;
     grid-area: "titulo";
     justify-content: center;
     align-content: center;
-    font-size: 35px;
+    font-size: 45px;
 }
-
-
-.menu{
-    grid-area: "menu";
-    background-color: rgba(100, 75, 71, 0.342);
-    padding-top: 10px ;
-    
-}
-
-.menuLista{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    list-style-type: none; /*Sin punto en las listas*/
-    /*flex-direction: row;*/
-    padding: 15px 15px;
-    justify-content: space-between;
-    align-content: stretch;
-    text-align: center;
-    font-size: 15px;
-}
-
-a:link {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: bolder;
-}
-.pagos{
-    display: flex;
-    padding: 10px;
-    margin: 10px;  
-    justify-items:left;
-    width: 250px; }
 
 
 
@@ -84,65 +43,20 @@ a:link {
 }
 
 .imagenes{
-    grid-area: "imagenes";
-    display:flex;
-    padding: 40px;
-    align-content:center;
-    background-color: rgb(187, 145, 145);
+
 }
 
-.logo{
-    width: 300px;
-    height: 400px;
+.navbar-brand{
+    font-size: 25px;
 }
 
+.collapse navbar-collapse{
+    padding: 10px;
+    max-resolution: 10px;
 
-.pie{
-    grid-area: "pie";
-    justify-content:space-around;
-    background-color: rgba(181, 180, 182, 0.644);
-    font-size: 12px;
-    flex-direction: column;
-    padding:  50px;
 }
-:root{
-    --facebook: #3b5999;
-    --instagram:#e4405f;
-    --tiktok:#e95cbf;
+.nav-item{
+    font-size: 15px;
+    color: black;
 }
-.redes{
-    display: flex;
-    height: 0;
-    align-items:flex-start;
-    justify-content:flex-start;
-}
-
-.redes ul li {
-    display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    text-align: center;
-}
-.redes ul li a{
-    display: block;
-    padding: 0 5px;
-    background-color: rgb(185, 98, 98);
-    color: beige;
-    line-height: 30px;
-}
-.geo{
-    font-size: 50px;
-}
-@media screen  and (max width: 500px){
-   .productos{
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.3fr 3fr 0,8fr;
-    grid-template-areas: 
-    "header"
-    "menu"
-    "imagenes"
-    "pie";
-   } 
-}
-
 
