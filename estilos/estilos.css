@@ -116,16 +116,3 @@ html{
 .p1{
   font-size:medium;  
 }
-
-
-.card{
-    margin: 30px;
-}
-
-.cirucloTalle{
-    background-color: blue;
-}
-
-#circuloColor:hover {
-    fill: blue;
-  }
