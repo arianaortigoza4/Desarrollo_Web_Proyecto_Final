@@ -106,7 +106,29 @@
   <div>
     <div class="card-group m-3">
       <div class="card ">
-        <img src="../multimedia/Gorras/Gorra1.jpg" class="card-img-top" alt="...">
+        <!--CARRUSEL-->
+        <div id="carruselInterval1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/201947B_AMB.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/201947B_CU_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/201947B_CU_1.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--CARRUSEL-->
         <div class="card-body">
           <h5 class="card-title">Seleccione su talle:</h5>
           <p class="card-text">
@@ -125,53 +147,14 @@
               <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
               x="11" y="22">L</text>  
             </svg>
+            <div class="testNose">
 
-            <h3>$1000 --> $750</h3>
-        </p>
-        </div>
-        <div class="card-footer">
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="red" stroke="red" stroke-width="1px"/>  
-          </svg>
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="green" stroke="green" stroke-width="1px"/>  
-          </svg>
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="black" stroke="black" stroke-width="1px"/>  
-          </svg>
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="blue" stroke="blue" stroke-width="1px"/>  
-          </svg>
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="white" stroke="white" stroke-width="1px"/>  
-          </svg>
-          <svg  width="34px" height="34px">
-            <circle  cx="15" cy="15" r="10" fill="pink" stroke="pink" stroke-width="1px"/>  
-          </svg>
-        </div>
-      </div>
-      <div class="card ">
-        <img src="../multimedia/Gorras/Gorra1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Seleccione su talle:</h5>
-          <p class="card-text">
-            <svg  width="34px" height="34px">
-              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
-              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
-              x="10" y="22">S</text>  
-            </svg>
-            <svg  width="34px" height="34px">
-              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
-              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
-              x="9" y="22">M</text>  
-            </svg>
-            <svg  width="34px" height="34px">
-              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
-              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
-              x="11" y="22">L</text>  
-            </svg>
-
-            <h3>$1000 --> $750</h3>
+              <h2 class="Oferta"> <del>$1000</del> --> $750</h2>
+              
+              <button type="button" class="btn btn-primary carritoBoton" id="liveToastBtn">Agregar</button>
+             
+             
+            </div>
         </p>
         </div>
         <div class="card-footer">
@@ -197,7 +180,7 @@
       </div>
       <div class="card ">
         <!--CARRUSEL-->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carruselInterval2" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/max113_1-min.jpg" class="d-block w-100" alt="...">
@@ -209,11 +192,84 @@
               <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/max113_2-min.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--CARRUSEL-->
+        <div class="card-body">
+          <h5 class="card-title">Seleccione su talle:</h5>
+          <p class="card-text">
+            <svg  width="34px" height="34px">
+              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
+              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
+              x="10" y="22">S</text>  
+            </svg>
+            <svg  width="34px" height="34px">
+              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
+              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
+              x="9" y="22">M</text>  
+            </svg>
+            <svg  width="34px" height="34px">
+              <circle  cx="17" id="cirucloColor" cy="17" r="15" fill="white" stroke="black" stroke-width="1px"/>
+              <text id="cirucloColor" fill="#000000" font-size="18" font-family="Verdana"
+              x="11" y="22">L</text>  
+            </svg>
+            <div class="testNose">
+
+              <h2 class="Oferta"> <del>$1000</del> --> $750</h2>
+              
+              <button type="button" class="btn btn-primary carritoBoton" id="liveToastBtn">Agregar</button>
+             
+             
+            </div>
+        </p>
+        </div>
+        <div class="card-footer">
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="red" stroke="red" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="green" stroke="green" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="black" stroke="black" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="blue" stroke="blue" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="white" stroke="white" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="pink" stroke="pink" stroke-width="1px"/>  
+          </svg>
+        </div>
+      </div>
+      <div class="card ">
+        <!--CARRUSEL-->
+        <div id="carruselInterval3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/201733.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/201733_blauw.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.maxilia.es/uploads/relatiegeschenken/relatiegeschenken_originals/FJM_8234%20kopi%C3%ABren.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval3" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
