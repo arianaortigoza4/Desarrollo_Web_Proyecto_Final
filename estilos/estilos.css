@@ -17,13 +17,12 @@ html{
     align-items: center;
 }
 
-
 .boton_header{
+    display: grid;
     height: 25px;
     width: 100px;
     grid-area: boton;
-    justify-self: right;
-
+    justify-self: center;
 
 }
 
@@ -110,3 +109,5 @@ html{
 .p1{
   font-size:medium;  
 }
+
+
