@@ -98,9 +98,80 @@
         </li>
       </ul>
     </div>
-    <svg class="carrito me-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill " viewBox="0 0 16 16">
-        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-      </svg>
+    <a xlink:href="#" class="btn-cta" >
+      <rect   data-toggle="modal" data-target="#section-h-modal" id="section-h" 
+       x="112.6" y="31.4" class="mapsvg-region" width="35.2" height="69.3" 
+       style="vector-effect: non-scaling-stroke; fill: rgb(0, 125, 186);" >
+      </rect>
+     </a>
+     
+  <svg class="carrito me-5"   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+    <g>
+      <a xlink:href="#" class="btn-cta" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo" >  
+        <path transform="translate(-10px, 0px)" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+      </a>
+    </g>
+  </svg>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS DE FACTURACION:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="CALLE N°">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Numero de contacto:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Entidad bancaria</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Forma de pago</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Mercado pago</option>
+                  <option>Tarjeta bancaria</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ingresar numero de CBU / tarjeta </label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck"> ACEPTO ENVIAR DATOS PERSONALES
+                  <label class="form-check-label" for="gridCheck">
+                    
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+              </div>
+            </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
   </nav>
 
   <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" class="categorias">
@@ -114,6 +185,7 @@
   <div>
     <div class="card-group m-3">
       <div class="card ">
+        
         <!--CARRUSEL-->
         <div id="carruselInterval1" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -158,6 +230,7 @@
             <div class="testNose">
 
               <h2 class="Oferta"> $6000</h2>
+              
               
               <button type="button" class="btn btn-primary carritoBoton" id="liveToastBtn">Agregar</button>
              
@@ -437,7 +510,7 @@
               Links Utiles:
             </h6>
             <p>
-              <a href="paginas/politicas.html" class="text-reset">Cambios y devoluciones</a>
+              <a href="preguntas.html" class="text-reset">Preguntas frecuentes</a>
             </p>
           </div>
           <!-- Grid column -->

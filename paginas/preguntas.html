@@ -34,36 +34,40 @@
     </h1> 
 
 
-    <button type="button" class="btn btn-primary boton_header" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesión</button>
+    <button type="button" class="btn btn-primary boton_header me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesión</button>
     
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">COMPLETA TUS DATOS:</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
               </div>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
               </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+              </div>
+              <button type="submit" class="btn btn-primary">INICIAR</button>
             </form>
-          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+            <button type="button" class="btn btn-primary">REGISTRATE</button>
           </div>
         </div>
       </div>
     </div>
-
 
 
   </header>
@@ -95,29 +99,194 @@
         </li>
       </ul>
     </div>
+    <a xlink:href="#" class="btn-cta" >
+      <rect   data-toggle="modal" data-target="#section-h-modal" id="section-h" 
+       x="112.6" y="31.4" class="mapsvg-region" width="35.2" height="69.3" 
+       style="vector-effect: non-scaling-stroke; fill: rgb(0, 125, 186);" >
+      </rect>
+     </a>
+     
+  <svg class="carrito me-5"   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+    <g>
+      <a xlink:href="#" class="btn-cta" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo" >  
+        <path transform="translate(-10px, 0px)" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+      </a>
+    </g>
+  </svg>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS DE FACTURACION:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="CALLE N°">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Numero de contacto:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Entidad bancaria</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Forma de pago</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Mercado pago</option>
+                  <option>Tarjeta bancaria</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ingresar numero de CBU / tarjeta </label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck"> ACEPTO ENVIAR DATOS PERSONALES
+                  <label class="form-check-label" for="gridCheck">
+                    
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+              </div>
+            </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
   </nav>
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" class="categorias">
+    <!-- Left -->
+    <div class="ms-4 d-none d-lg-block">
+      <h1>PREGUNTAS FRECUENTES:</h1>
+    </div>
+  </section>
   <main>
-    <main align=" CENTER">
-      <h4 class="pp1">Política de cambios y Devoluciones </h4>
-      <p class="p1">Cambios:
-
-          Si no estás conforme con nuestro/s producto/s o el talle no era el indicado, podés realizar el cambio del mismo dentro de los 30 días siguientes de haber recibido el paquete. Las prendas deben estar en el mismo estado en que fueron despachadas: con su etiqueta colgante, packaging y ticket de cambio correspondientes.
-          
-          Podés realizar el cambio por correo postal: escribinos por Whatsapp o por Mail informándonos tu CAMBIO, tu número de orden, la prenda que deseas cambiar y la prenda nueva que deseas obtener. Te indicaremos qué tenés que hacer para enviarlo. El costo del envío correrá por cuenta del cliente. Los cambios pueden realizarse por otro talle del producto adquirido (sin ningún costo extra) o por un producto nuevo. 
-          
-          En el caso que haya diferencia de dinero entre los productos: a favor del cliente, podrá usarlo en el momento para la compra de otra prenda o solicitarnos el reembolso de ese monto. Si la diferencia es a favor de la marca, el cliente deberá abonarla para obtener el producto nuevo. 
-          
-          En ninguno de los casos se harán devoluciones en efectivo. Para evitar situaciones de cambios por talles, todas las prendas tienen una tabla de talle con sus medidas en la descripción del producto, te pedimos tengas en cuenta esto a la hora de elegirlos. Si aún tenés dudas, podés comunicarte con nosotros por Whatsapp al 1171382546, o vía mail a ventas@tthellcaps.com.ar .
-          El horario de atención es de Lunes a Viernes de 10 a 17hs.
-           
-          
-          Devoluciones:
-          
-          Para realizar una devolución, podés acercarte a nuestro estadio en Villa Urquiza dentro de los 30 días de haber recibido tu compra. Traé los productos que deseás devolver, en su packaging original, con etiqueta colgante y ticket de cambio correspondientes. Te tomaremos tus datos para realizar posteriormente el reintegro de dinero.
-          El dinero será reintegrado al cliente de la manera que lo solicite con excepción de compras a través de MercadoPago, el cual se reintegrará por ese medio. Si no podés acercarte, podemos realizar la devolución por correo postal: escribinos por Whatsapp o vía Mail, informándonos tu DEVOLUCIÓN, tu número de orden, la prenda que deseas devolver y el motivo de la devolución. Te indicaremos qué tenés que hacer para enviarlo. Una vez que la empresa tenga el o los productos con ticket de cambio, procederemos con el reintegro de dinero.
-          
-          Atentamente, el equipo de TTHELLCAPS.</p>
-          <img src="../multimedia/HD-wallpaper-devil-love-neon.jpg.crdownload" alt="logo" class="logo">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <h2>¿COMO COMPRAR?</h2>
+              </blockquote>
+            </figure>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Guía de compra
+            Paso 1: Elegir lo que querés
+            
+            Es muy fácil. Agrega los productos que desees a tu carrito de compra haciendo click en "Agregar al carrito". Una vez que hayas seleccionado todos los productos, hace click en “Comprar ahora” para avanzar en tu pedido.
+            
+            Paso 2: Seleccionar la opción de envío
+            
+            El siguiente paso es completar tu dirección y seleccionar el modo de envío.
+            
+            El envío si es dentro de CABA, se realiza con motomensajería.
+            
+            Para el resto del país, por Correo Argentino.
+            
+            También vas a encontrar la opción de retirar por la oficina de manera GRATUITA.
+            
+            
+            Paso 3: Realizar el Pago
+            
+            Todas las transacciones son seguras y están cifradas.
+            
+            Haciendo click en “Finalizar el pedido” serás redirigido a la página de Mercado Pago para realizar de forma segura el pago con tarjeta de crédito/débito o efectivo.
+            
+            Confirmación de compra
+            
+            Una vez confirmado el pago, vas a estar recibiendo un mail con la confirmación de tu compra y datos para el seguimiento de tu pedido.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <h2>ENVÍOS</h2>
+              </blockquote>
+            </figure>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">¿Hacen envíos?
+            Sí, hacemos envíos desde nuestra oficina a todo el país.
+            
+            Dentro de CABA el envío se realiza en motomensajería, con un valor único de $390.
+            
+            Para el resto del país con Correo Argentino por $690 finales.
+            
+            Además tenés la opcón de retirarlo por la oficina de forma GRATUITA.
+            
+            ¿Cuánto demora la entrega?
+            Dependerá de la dirección de entrega. Nosotros despachamos el producto en un máximo de 72hs hábiles desde el momento de la compra. Luego según la dirección de entrega puede variar entre 2 y 7 días. Los detalles del envío te llegaran en un correo electrónico a tu casilla, y podrás realizar el seguimiento del paquete.<code></code></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <h2>PRODUCTO</h2>
+              </blockquote>
+            </figure>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> Cambio y/o devoluciones:
+            Todos los cambios se realizan exclusivamente en la oficina dentro de los 30 días de realizada la compra. De requerir envío para el cambio, el mismo estará a cargo del comprador.
+            
+            Es importante tener en cuenta una vez que recibis el pedido, chequearlo antes de firmar la conformidad, ya que luego no hay lugar a reclamos.<code></code></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <h2>VENTAS MAYORISTAS</h2>
+              </blockquote>
+            </figure>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">PACKS EMPRENDEDORES:
+            Contamos con una sección de Packs de 6 unidades hechos para emprendedores.
+            
+            Valores súper accesibles, packaging premium de regalo, y acesorameinto gratiuto por whatsapp.
+            
+            Puedes contactarnos por cualquiera de las siguientes vías, y estaremos encantados de responder todas tus consultas:
+            
+            Mail: info@tthellcaps.com.ar
+            
+            Whatsapp: +54 911 3318 0493
+            
+             o Mensaje privado en Instagram<code></code></div>
+        </div>
+      </div>
+    </div>
   </main>
     <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
@@ -219,7 +388,7 @@
               Links Utiles:
             </h6>
             <p>
-              <a href="paginas/politicas.html" class="text-reset">Cambios y devoluciones</a>
+              <a href="preguntas.html" class="text-reset">Preguntas frecuentes</a>
             </p>
           </div>
           <!-- Grid column -->
